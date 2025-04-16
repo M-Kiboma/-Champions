@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.thank-you-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+</style>
+<body>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="thank-you-message" class="thank-you-message" style="display: none;">
+            <h2>Thank you for your message!</h2>
+            <p>We'll get back to you as soon as possible.</p>
+            <a href="#"><button>Ok</button></a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();  // Prevent form from refreshing the page
+
+            // Hide the form
+            document.getElementById('contact-form').style.display = 'none';
+
+            // Show the thank you message
+            document.getElementById('thank-you-message').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

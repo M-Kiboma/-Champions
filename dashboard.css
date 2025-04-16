@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0f7ff, #f0faff);
+    color: #002f5f;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #004d99;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav a {
+    text-decoration: none;
+    color: white;
+    margin: 12px 0;
+    display: block;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .sidebar nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding-left: 10px;
+    border-radius: 6px;
+  }
+  
+  .main-area {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .employer-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #cce6ff;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 77, 153, 0.2);
+  }
+  
+  .employer-profile img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    background: #ffffff;
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 77, 153, 0.15);
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #004d99;
+  }
+  
+  .buttons-section {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .glow-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    background: #0077cc;
+    box-shadow: 0 0 10px #66ccff;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.4s ease;
+  }
+  
+  .glow-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #33bbff, 0 0 40px #1aa3ff;
+  }
+  
+  .info-panels {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .panel {
+    background: #ffffff;
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 77, 153, 0.1);
+  }
+  
+  .panel ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #004d99;
+    color: white;
+    border-radius: 15px;
+  }
+ 
+  
+  

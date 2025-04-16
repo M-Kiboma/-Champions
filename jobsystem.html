@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jobsystem.css">
+</head>
+<body>
+</html><div class="top-bar">
+    <a href="dashboard.html" class="back-button">⬅ Back to Dashboard</a>
+    <h2>🚀 Available Jobs</h2>
+  </div>
+
+  <div class="job-card">
+    <h3>Junior Web Developer</h3>
+    <p>Location: Nairobi</p>
+    <button onclick="applyForJob('Junior Web Developer')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Frontend Engineer</h3>
+    <p>Location: Kisumu</p>
+    <button onclick="applyForJob('Frontend Engineer')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Digital Marketing Specialist</h3>
+    <p>Location: Mombasa</p>
+    <button onclick="applyForJob('Digital Marketing Specialist')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>UI/UX Designer</h3>
+    <p>Location: Nairobi</p>
+    <button onclick="applyForJob('UI/UX Designer')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Software Tester</h3>
+    <p>Location: Eldoret</p>
+    <button onclick="applyForJob('Software Tester')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Data Analyst</h3>
+    <p>Location: Nakuru</p>
+    <button onclick="applyForJob('Data Analyst')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Full Stack Developer</h3>
+    <p>Location: Remote</p>
+    <button onclick="applyForJob('Full Stack Developer')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Project Manager</h3>
+    <p>Location: Kisii</p>
+    <button onclick="applyForJob('Project Manager')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Content Writer</h3>
+    <p>Location: Remote</p>
+    <button onclick="applyForJob('Content Writer')">Apply</button>
+  </div>
+
+  <div class="job-card">
+    <h3>Mobile App Developer</h3>
+    <p>Location: Thika</p>
+    <button onclick="applyForJob('Mobile App Developer')">Apply</button>
+  </div>
+
+  <script>
+    function applyForJob(jobTitle) {
+      localStorage.setItem("jobToApply", jobTitle);
+      window.location.href = "apply.html";
+    }
+  </script>
+
+</body>
+</html>

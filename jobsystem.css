@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8ff;
+    padding: 20px;
+  }
+  h2 {
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .job-card {
+    background: #ffffff;
+    border: 1px solid #cce7ff;
+    border-left: 5px solid #1e90ff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #e6f0ff;
+  }
+  .job-card h3 {
+    margin: 0 0 10px;
+    color: #1e90ff;
+  }
+  .job-card button {
+    background: #1e90ff;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .job-card button:hover {
+    background: #005bb5;
+  }
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .back-button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  .back-button:hover {
+    background-color: #005bb5;
+  }
